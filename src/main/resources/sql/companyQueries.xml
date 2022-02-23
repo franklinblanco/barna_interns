@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="getCompany">
+        <![CDATA[
+        select * from companies
+        where id=:id
+    ]]>
+    </entry>
+    <entry key="getCompanies">
+        <![CDATA[
+        select * from companies
+    ]]>
+    </entry>
+    <entry key="insertCompany">
+        <![CDATA[
+        insert into companies
+        (id, rnc, legal_name, date_created)
+        values
+        (:id, :rnc, :legal_name, :date_created)
+    ]]>
+    </entry>
+</properties>

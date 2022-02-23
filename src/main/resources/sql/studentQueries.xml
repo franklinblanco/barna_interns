@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="getStudent">
+        <![CDATA[
+        select * from students
+        where id=:id
+    ]]>
+    </entry>
+    <entry key="getStudents">
+        <![CDATA[
+        select * from students
+    ]]>
+    </entry>
+    <entry key="insertStudent">
+        <![CDATA[
+        insert into students
+        (id, name, date_of_birth, institutional_id, date_created)
+        values
+        (:id, :name, :date_of_birth, :institutional_id, :date_created)
+    ]]>
+    </entry>
+    <entry key="getStudentCount">
+        <![CDATA[
+        select COUNT(*) from students
+    ]]>
+    </entry>
+</properties>

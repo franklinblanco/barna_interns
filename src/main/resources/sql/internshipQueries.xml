@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="getInternship">
+        <![CDATA[
+        select * from internships
+        where id=:id
+    ]]>
+    </entry>
+    <entry key="getInternships">
+        <![CDATA[
+        select * from internships
+    ]]>
+    </entry>
+</properties>
